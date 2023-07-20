@@ -1,0 +1,120 @@
+main.date-todos-page {
+  figure {
+    main {
+      display: flex;
+      gap: 0.5rem;
+    }
+    button {
+      padding: 0.2rem 1rem;
+    }
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 16px;
+
+    aside {
+      display: flex;
+      gap: 0.5rem;
+      margin-right: 1rem;
+
+      p {
+        cursor: pointer;
+        font-weight: bold;
+        color: #3a85f7;
+
+        position: relative;
+        @media (max-width: 662px) {
+          color: white !important;
+          max-width: 1.5rem;
+          max-height: 1.5rem;
+          &::after {
+            display: inline !important;
+            max-width: 1rem;
+          }
+        }
+        &::after {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          content: "";
+        }
+      }
+
+      p.btn-edit {
+        position: relative;
+        &::after {
+          height: 1rem;
+          width: 1rem;
+          background: url("../../assets/pencil.svg") no-repeat;
+        }
+      }
+      p.btn-save {
+        position: relative;
+        &::after {
+          height: 1rem;
+          width: 1rem;
+          background: url("../../assets/save.svg") no-repeat;
+        }
+      }
+      p.btn-cancel {
+        position: relative;
+        color: #888;
+
+        &::after {
+          height: 1rem;
+          width: 1rem;
+          background: url("../../assets/cancel.svg") no-repeat;
+        }
+      }
+      p.btn-delete {
+        position: relative;
+        color: #eb445a;
+        &::after {
+          height: 1rem;
+          width: 1rem;
+          background: url("../../assets/trash.svg") no-repeat;
+        }
+      }
+    }
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    input[type="checkbox"] {
+      accent-color: #3c923b;
+    }
+    input[type="text"] {
+      width: 200px;
+      padding: 0.25rem;
+      border: none;
+
+      white-space: nowrap;
+      max-width: 40vw;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    button {
+      cursor: pointer;
+      background: white;
+      border: 1px solid #f2f2f7;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      padding: 14px;
+      gap: 12px;
+      margin-left: 1rem;
+    }
+    @media (max-width: 662px) {
+      button {
+        margin-left: 0rem;
+      }
+    }
+  }
+}

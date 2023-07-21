@@ -76,7 +76,7 @@ function MainPage() {
 
           return (
             <article key={groupKey}>
-              <Link to={`${groupKey}`}>
+              <Link to={`/cretrix-todo-app/${groupKey}`}>
                 <div
                   style={{
                     padding: "12px 16px",

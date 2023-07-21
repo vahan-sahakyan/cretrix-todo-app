@@ -19,7 +19,7 @@ function TodoItem(todo: Todo & { currentDateLength: number }) {
   };
   const handleDelete = () => {
     dispatch(deleteTodo({ id: todo.id }));
-    if (todo.currentDateLength < 2) navigate("/");
+    if (todo.currentDateLength < 2) navigate("/cretrix-todo-app/");
   };
   const handleToggleCheck = () => {
     dispatch(toggleTodoStatus({ id: todo.id }));

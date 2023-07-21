@@ -33,7 +33,7 @@ function ByDateTodosPage() {
   return (
     <main className="date-todos-page">
       <header>
-        <button onClick={() => navigate("/")}>
+        <button onClick={() => navigate("/cretrix-todo-app/")}>
           <img
             style={{ transform: "rotate(180deg)" }}
             src={RightArrow}
